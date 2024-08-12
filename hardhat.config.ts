@@ -9,7 +9,7 @@ require('@openzeppelin/hardhat-upgrades');
 
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.23",
+  solidity: "0.8.20",
   sourcify: {
     // Enable Sourcify verification by default
     enabled: true,
