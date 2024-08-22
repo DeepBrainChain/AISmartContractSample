@@ -45,7 +45,7 @@ contract Token is Initializable, ERC20Upgradeable, OwnableUpgradeable, ERC20Perm
     }
 
     function initialize(address initialOwner) public initializer {
-        __ERC20_init("DecentralGPT", "DGC");
+        __ERC20_init("My Token", "MTK");
         __Ownable_init(initialOwner);
 
         _mint(owner(), 600_000_000_000 * 10 ** decimals());
@@ -65,6 +65,7 @@ contract Token is Initializable, ERC20Upgradeable, OwnableUpgradeable, ERC20Perm
         uint256 balance = ERC20token.balanceOf(address(this));
         ERC20token.safeTransfer(msg.sender, balance);
     }
+
 
     function disableLockPermanently() external onlyOwner {
         isLockActive = false;

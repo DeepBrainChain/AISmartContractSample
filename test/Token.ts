@@ -25,7 +25,7 @@ import {
     describe("Deployment", function () {
         it("Should deploy the contract with the owner as the deployer", async function () {
             const { contract, owner } = await deployFixture();
-            expect(await contract.symbol() ).to.equal('DGC');
+            expect(await contract.symbol() ).to.equal('MTK');
         })    
     })
     // todo
