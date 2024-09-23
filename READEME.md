@@ -5,9 +5,8 @@
       rpc_url: 'https://rpc-testnet.dbcwallet.io',
       api_url: "https://blockscout-testnet.dbcscan.io/api",
       browser_url: "https://blockscout-testnet.dbcscan.io",
-      chain_id: 5777,
       network: "dbcTestnet",
-      chainId: 19850818,
+      chain_id: 19850818,
 
 
 ## you can use Makefile to compile, deploy, upgrade, verify or test the contract.
